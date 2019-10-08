@@ -15,7 +15,7 @@ public class MessageController {
 
     @RequestMapping("/hello")
     public Message msg(@RequestParam(value="name", defaultValue="World") String name) {
-        return new Message(counter.incrementAndGet(), "Hello " +  name);
+        return new Message(counter.incrementAndGet(), "Whats up " +  name);
     }
     
 }
